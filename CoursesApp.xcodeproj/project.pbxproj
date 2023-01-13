@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		DA9A22D82970424800DD6751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22D72970424800DD6751 /* AppDelegate.swift */; };
 		DA9A22DA2970424800DD6751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22D92970424800DD6751 /* SceneDelegate.swift */; };
-		DA9A22DC2970424800DD6751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22DB2970424800DD6751 /* ViewController.swift */; };
+		DA9A22DC2970424800DD6751 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22DB2970424800DD6751 /* CourseListViewController.swift */; };
 		DA9A22DF2970424800DD6751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9A22DD2970424800DD6751 /* Main.storyboard */; };
 		DA9A22E12970424A00DD6751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA9A22E02970424A00DD6751 /* Assets.xcassets */; };
 		DA9A22E42970424A00DD6751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA9A22E22970424A00DD6751 /* LaunchScreen.storyboard */; };
 		DA9A22F0297044B700DD6751 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22EF297044B700DD6751 /* Course.swift */; };
+		DA9A22F5297048A400DD6751 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22F2297048A400DD6751 /* DataManager.swift */; };
+		DA9A22F6297048A400DD6751 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22F3297048A400DD6751 /* ImageManager.swift */; };
+		DA9A22F7297048A400DD6751 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22F4297048A400DD6751 /* NetworkManager.swift */; };
+		DA9A22F9297048E000DD6751 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */; };
+		DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22FA29704B3900DD6751 /* CourseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA9A22D42970424800DD6751 /* CoursesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9A22D72970424800DD6751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA9A22D92970424800DD6751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA9A22DB2970424800DD6751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA9A22DB2970424800DD6751 /* CourseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewController.swift; sourceTree = "<group>"; };
 		DA9A22DE2970424800DD6751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA9A22E02970424A00DD6751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA9A22E32970424A00DD6751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA9A22E52970424A00DD6751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA9A22EF297044B700DD6751 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		DA9A22F2297048A400DD6751 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		DA9A22F3297048A400DD6751 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		DA9A22F4297048A400DD6751 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
+		DA9A22FA29704B3900DD6751 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,14 @@
 		DA9A22D62970424800DD6751 /* CoursesApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA9A22DB2970424800DD6751 /* CourseListViewController.swift */,
+				DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */,
+				DA9A22FA29704B3900DD6751 /* CourseCell.swift */,
 				DA9A22EE2970447E00DD6751 /* Models */,
-				DA9A22DB2970424800DD6751 /* ViewController.swift */,
+				DA9A22F1297048A400DD6751 /* Services */,
 				DA9A22EB297043F900DD6751 /* Storyboard */,
 				DA9A22EC2970440900DD6751 /* Resources */,
-				DA9A22ED2970443B00DD6751 /* Supporting Files */,
+				DA9A22ED2970443B00DD6751 /* SupportingFiles */,
 			);
 			path = CoursesApp;
 			sourceTree = "<group>";
@@ -84,14 +97,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DA9A22ED2970443B00DD6751 /* Supporting Files */ = {
+		DA9A22ED2970443B00DD6751 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				DA9A22D72970424800DD6751 /* AppDelegate.swift */,
 				DA9A22D92970424800DD6751 /* SceneDelegate.swift */,
 				DA9A22E52970424A00DD6751 /* Info.plist */,
 			);
-			path = "Supporting Files";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		DA9A22EE2970447E00DD6751 /* Models */ = {
@@ -100,6 +113,16 @@
 				DA9A22EF297044B700DD6751 /* Course.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DA9A22F1297048A400DD6751 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A22F2297048A400DD6751 /* DataManager.swift */,
+				DA9A22F3297048A400DD6751 /* ImageManager.swift */,
+				DA9A22F4297048A400DD6751 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +197,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9A22F0297044B700DD6751 /* Course.swift in Sources */,
-				DA9A22DC2970424800DD6751 /* ViewController.swift in Sources */,
+				DA9A22DC2970424800DD6751 /* CourseListViewController.swift in Sources */,
 				DA9A22D82970424800DD6751 /* AppDelegate.swift in Sources */,
+				DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */,
+				DA9A22F7297048A400DD6751 /* NetworkManager.swift in Sources */,
+				DA9A22F6297048A400DD6751 /* ImageManager.swift in Sources */,
+				DA9A22F5297048A400DD6751 /* DataManager.swift in Sources */,
+				DA9A22F9297048E000DD6751 /* CourseDetailsViewController.swift in Sources */,
 				DA9A22DA2970424800DD6751 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M963S5SV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoursesApp/Info.plist;
+				INFOPLIST_FILE = CoursesApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -357,7 +385,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M963S5SV4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoursesApp/Info.plist;
+				INFOPLIST_FILE = CoursesApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
