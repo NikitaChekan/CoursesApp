@@ -32,7 +32,7 @@ class NetworkManager {
                     completion(courses)
                 }
             } catch let error {
-                print("Error serialization json", error)
+                print("Error serialisation json", error)
             }
             
         }.resume()
