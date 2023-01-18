@@ -19,6 +19,7 @@
 		DA9A22F7297048A400DD6751 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22F4297048A400DD6751 /* NetworkManager.swift */; };
 		DA9A22F9297048E000DD6751 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */; };
 		DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22FA29704B3900DD6751 /* CourseCell.swift */; };
+		DAE863F429785945001AA37A /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE863F329785945001AA37A /* CourseDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DA9A22F4297048A400DD6751 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
 		DA9A22FA29704B3900DD6751 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		DAE863F329785945001AA37A /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,8 @@
 		DA9A22D62970424800DD6751 /* CoursesApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAE863F2297858F8001AA37A /* CourseDetails */,
 				DA9A22DB2970424800DD6751 /* CourseListViewController.swift */,
-				DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */,
 				DA9A22FA29704B3900DD6751 /* CourseCell.swift */,
 				DA9A22EE2970447E00DD6751 /* Models */,
 				DA9A22F1297048A400DD6751 /* Services */,
@@ -123,6 +125,15 @@
 				DA9A22F4297048A400DD6751 /* NetworkManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		DAE863F2297858F8001AA37A /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */,
+				DAE863F329785945001AA37A /* CourseDetailsViewModel.swift */,
+			);
+			path = CourseDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE863F429785945001AA37A /* CourseDetailsViewModel.swift in Sources */,
 				DA9A22F0297044B700DD6751 /* Course.swift in Sources */,
 				DA9A22DC2970424800DD6751 /* CourseListViewController.swift in Sources */,
 				DA9A22D82970424800DD6751 /* AppDelegate.swift in Sources */,

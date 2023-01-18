@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  CoursesApp
 //
-//  Created by jopootrivatel on 12.01.2023.
+//  Created by Nikita Chekan on 12.01.2023.
 //
 
 import UIKit
