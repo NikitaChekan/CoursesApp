@@ -15,22 +15,10 @@ class CourseDetailsViewController: UIViewController {
     @IBOutlet private var courseImage: UIImageView!
     @IBOutlet private var favoriteButton: UIButton!
     
-    var course: Course!
-    var viewModel: CourseDetailsViewModelProtocol! {
-        didSet {
-            viewModel.viewModelDidChange = { [unowned self] viewModel in
-                setStatusForFavoriteButton(viewModel.isFavorite)
-            }
-            courseNameLabel.text = viewModel.courseName
-            numberOfLessonsLabel.text = viewModel.numberOfLessons
-            numberOfTestsLabel.text = viewModel.numberOfTests
-            courseImage.image = UIImage(data: viewModel.imageData ?? Data())
-        }
-    }
+    var viewModel: CourseDetailsViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = CourseDetailsViewModel(course: course)
         setupUI()
     }
     
@@ -40,6 +28,14 @@ class CourseDetailsViewController: UIViewController {
     
     private func setupUI() {
         setStatusForFavoriteButton(viewModel.isFavorite)
+        
+        viewModel.viewModelDidChange = { [unowned self] viewModel in
+            setStatusForFavoriteButton(viewModel.isFavorite)
+        }
+        courseNameLabel.text = viewModel.courseName
+        numberOfLessonsLabel.text = viewModel.numberOfLessons
+        numberOfTestsLabel.text = viewModel.numberOfTests
+        courseImage.image = UIImage(data: viewModel.imageData ?? Data())
     }
     
     private func setStatusForFavoriteButton(_ status: Bool) {

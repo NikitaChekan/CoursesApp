@@ -21,6 +21,7 @@
 		DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22FA29704B3900DD6751 /* CourseCell.swift */; };
 		DAE863F429785945001AA37A /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE863F329785945001AA37A /* CourseDetailsViewModel.swift */; };
 		DAE863F829786557001AA37A /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE863F729786557001AA37A /* CourseListViewModel.swift */; };
+		DAE863FA29786A08001AA37A /* CourseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE863F929786A08001AA37A /* CourseCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DA9A22FA29704B3900DD6751 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		DAE863F329785945001AA37A /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
 		DAE863F729786557001AA37A /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
+		DAE863F929786A08001AA37A /* CourseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9A22FA29704B3900DD6751 /* CourseCell.swift */,
+				DAE863F929786A08001AA37A /* CourseCellViewModel.swift */,
 			);
 			path = CourseCell;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				DA9A22F6297048A400DD6751 /* ImageManager.swift in Sources */,
 				DAE863F829786557001AA37A /* CourseListViewModel.swift in Sources */,
 				DA9A22F5297048A400DD6751 /* DataManager.swift in Sources */,
+				DAE863FA29786A08001AA37A /* CourseCellViewModel.swift in Sources */,
 				DA9A22F9297048E000DD6751 /* CourseDetailsViewController.swift in Sources */,
 				DA9A22DA2970424800DD6751 /* SceneDelegate.swift in Sources */,
 			);
