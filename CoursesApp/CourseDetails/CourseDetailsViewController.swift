@@ -18,8 +18,8 @@ class CourseDetailsViewController: UIViewController {
     var course: Course!
     var viewModel: CourseDetailsViewModelProtocol! {
         didSet {
-            viewModel.viewModelDidChange = { viewModel in
-                self.setStatusForFavoriteButton(viewModel.isFavorite)
+            viewModel.viewModelDidChange = { [unowned self] viewModel in
+                setStatusForFavoriteButton(viewModel.isFavorite)
             }
             courseNameLabel.text = viewModel.courseName
             numberOfLessonsLabel.text = viewModel.numberOfLessons

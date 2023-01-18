@@ -20,6 +20,7 @@
 		DA9A22F9297048E000DD6751 /* CourseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */; };
 		DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22FA29704B3900DD6751 /* CourseCell.swift */; };
 		DAE863F429785945001AA37A /* CourseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE863F329785945001AA37A /* CourseDetailsViewModel.swift */; };
+		DAE863F829786557001AA37A /* CourseListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE863F729786557001AA37A /* CourseListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewController.swift; sourceTree = "<group>"; };
 		DA9A22FA29704B3900DD6751 /* CourseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		DAE863F329785945001AA37A /* CourseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsViewModel.swift; sourceTree = "<group>"; };
+		DAE863F729786557001AA37A /* CourseListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,6 @@
 			children = (
 				DAE863F2297858F8001AA37A /* CourseDetails */,
 				DAE863F529785981001AA37A /* CourseList */,
-				DA9A22FA29704B3900DD6751 /* CourseCell.swift */,
 				DA9A22EE2970447E00DD6751 /* Models */,
 				DA9A22F1297048A400DD6751 /* Services */,
 				DA9A22EB297043F900DD6751 /* Storyboard */,
@@ -140,8 +141,18 @@
 			isa = PBXGroup;
 			children = (
 				DA9A22DB2970424800DD6751 /* CourseListViewController.swift */,
+				DAE863F729786557001AA37A /* CourseListViewModel.swift */,
+				DAE863F629786537001AA37A /* CourseCell */,
 			);
 			path = CourseList;
+			sourceTree = "<group>";
+		};
+		DAE863F629786537001AA37A /* CourseCell */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A22FA29704B3900DD6751 /* CourseCell.swift */,
+			);
+			path = CourseCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */,
 				DA9A22F7297048A400DD6751 /* NetworkManager.swift in Sources */,
 				DA9A22F6297048A400DD6751 /* ImageManager.swift in Sources */,
+				DAE863F829786557001AA37A /* CourseListViewModel.swift in Sources */,
 				DA9A22F5297048A400DD6751 /* DataManager.swift in Sources */,
 				DA9A22F9297048E000DD6751 /* CourseDetailsViewController.swift in Sources */,
 				DA9A22DA2970424800DD6751 /* SceneDelegate.swift in Sources */,
