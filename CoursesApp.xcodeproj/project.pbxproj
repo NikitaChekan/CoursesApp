@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3B9C2029796D0E00CF507B /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B9C1F29796D0E00CF507B /* Box.swift */; };
 		DA9A22D82970424800DD6751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22D72970424800DD6751 /* AppDelegate.swift */; };
 		DA9A22DA2970424800DD6751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22D92970424800DD6751 /* SceneDelegate.swift */; };
 		DA9A22DC2970424800DD6751 /* CourseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9A22DB2970424800DD6751 /* CourseListViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3B9C1F29796D0E00CF507B /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		DA9A22D42970424800DD6751 /* CoursesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA9A22D72970424800DD6751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA9A22D92970424800DD6751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3B9C1E29796D0100CF507B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B9C1F29796D0E00CF507B /* Box.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DA9A22CB2970424800DD6751 = {
 			isa = PBXGroup;
 			children = (
@@ -74,9 +84,10 @@
 		DA9A22D62970424800DD6751 /* CoursesApp */ = {
 			isa = PBXGroup;
 			children = (
-				DAE863F2297858F8001AA37A /* CourseDetails */,
 				DAE863F529785981001AA37A /* CourseList */,
+				DAE863F2297858F8001AA37A /* CourseDetails */,
 				DA9A22EE2970447E00DD6751 /* Models */,
+				DA3B9C1E29796D0100CF507B /* Helpers */,
 				DA9A22F1297048A400DD6751 /* Services */,
 				DA9A22EB297043F900DD6751 /* Storyboard */,
 				DA9A22EC2970440900DD6751 /* Resources */,
@@ -123,9 +134,9 @@
 		DA9A22F1297048A400DD6751 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DA9A22F2297048A400DD6751 /* DataManager.swift */,
-				DA9A22F3297048A400DD6751 /* ImageManager.swift */,
 				DA9A22F4297048A400DD6751 /* NetworkManager.swift */,
+				DA9A22F3297048A400DD6751 /* ImageManager.swift */,
+				DA9A22F2297048A400DD6751 /* DataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -235,6 +246,7 @@
 				DA9A22D82970424800DD6751 /* AppDelegate.swift in Sources */,
 				DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */,
 				DA9A22F7297048A400DD6751 /* NetworkManager.swift in Sources */,
+				DA3B9C2029796D0E00CF507B /* Box.swift in Sources */,
 				DA9A22F6297048A400DD6751 /* ImageManager.swift in Sources */,
 				DAE863F829786557001AA37A /* CourseListViewModel.swift in Sources */,
 				DA9A22F5297048A400DD6751 /* DataManager.swift in Sources */,
