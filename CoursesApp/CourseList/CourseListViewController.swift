@@ -8,11 +8,11 @@
 import UIKit
 
 protocol CourseListViewInputProtocol {
-    
+    func display(courses: [Course])
 }
 
 protocol CourseListViewOutputProtocol {
-    init(view: CourseDetailsViewInputProtocol)
+    init(view: CourseListViewInputProtocol)
     func viewDidLoad()
 }
 
@@ -21,15 +21,17 @@ class CourseListViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     var presenter: CourseListViewOutputProtocol!
     
+    private let configurator: CourseListConfiguratorInputProtocol = CourseListConfigurator()
     private var activityIndicator: UIActivityIndicatorView?
     private var courses: [Course] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configurator.configure(withView: self)
         tableView.rowHeight = 100
         activityIndicator = showActivityIndicator(in: view)
         setupNavigationBar()
-        getCourses()
+        presenter.viewDidLoad()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,16 +39,6 @@ class CourseListViewController: UIViewController {
             return
         }
         detailVC.course = sender as? Course
-    }
-    
-    private func getCourses() {
-        NetworkManager.shared.fetchData() { courses in
-            self.courses = courses
-            DispatchQueue.main.async {
-                self.activityIndicator?.stopAnimating()
-                self.tableView.reloadData()
-            }
-        }
     }
     
     private func setupNavigationBar() {
@@ -94,6 +86,14 @@ extension CourseListViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         let course = courses[indexPath.row]
         performSegue(withIdentifier: "showDetails", sender: course)
+    }
+}
+
+extension CourseListViewController: CourseListViewInputProtocol {
+    func display(courses: [Course]) {
+        self.courses = courses
+        tableView.reloadData()
+        activityIndicator?.stopAnimating()
     }
 }
 
