@@ -7,6 +7,15 @@
 
 import UIKit
 
+protocol CourseDetailsViewInputProtocol: AnyObject {
+    
+}
+
+protocol CourseDetailsViewOutputProtocol {
+    init(view: CourseDetailsViewInputProtocol)
+    func showDetails()
+}
+
 class CourseDetailsViewController: UIViewController {
     
     @IBOutlet private var courseNameLabel: UILabel!
@@ -16,13 +25,17 @@ class CourseDetailsViewController: UIViewController {
     @IBOutlet private var favoriteButton: UIButton!
     
     var course: Course!
+    var presenter: CourseDetailsViewInputProtocol!
+    var configurator: CourseDetailsConfiguratorInputProtocol = CourseDetailsConfigurator()
     
     private var isFavorite = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configurator.configure(withView: self, and: course)
         loadFavoriteStatus()
         setupUI()
+//        presenter.showDetails()
     }
     
     @IBAction func toggleFavorite() {
@@ -50,4 +63,9 @@ class CourseDetailsViewController: UIViewController {
     private func loadFavoriteStatus() {
         isFavorite = DataManager.shared.getFavoriteStatus(for: course.name)
     }
+}
+
+// MARK: - CourseDetailsViewInputProtocol
+extension CourseDetailsViewController: CourseDetailsViewInputProtocol {
+    
 }
