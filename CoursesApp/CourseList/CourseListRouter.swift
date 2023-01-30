@@ -20,6 +20,6 @@ class CourseListRouter: CourseListRouterInputProtocol {
     }
     
     func openCourseDetailsViewController(with course: Course) {
-        
+        view.performSegue(withIdentifier: "showDetails", sender: course)
     }
 }

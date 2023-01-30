@@ -26,6 +26,7 @@
 		DAEF7DAF298827B600284326 /* CourseListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DAE298827B600284326 /* CourseListInteractor.swift */; };
 		DAEF7DB1298827C500284326 /* CourseListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DB0298827C500284326 /* CourseListConfigurator.swift */; };
 		DAEF7DB329882CB600284326 /* CourseListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DB229882CB600284326 /* CourseListRouter.swift */; };
+		DAEF7DB529884FFF00284326 /* CourseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DB429884FFF00284326 /* CourseCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		DAEF7DAE298827B600284326 /* CourseListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListInteractor.swift; sourceTree = "<group>"; };
 		DAEF7DB0298827C500284326 /* CourseListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListConfigurator.swift; sourceTree = "<group>"; };
 		DAEF7DB229882CB600284326 /* CourseListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListRouter.swift; sourceTree = "<group>"; };
+		DAEF7DB429884FFF00284326 /* CourseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9A22FA29704B3900DD6751 /* CourseCell.swift */,
+				DAEF7DB429884FFF00284326 /* CourseCellViewModel.swift */,
 			);
 			path = CourseCell;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				DAEF7DA72987FF2500284326 /* CourseDetailsPresenter.swift in Sources */,
 				DA9A22DA2970424800DD6751 /* SceneDelegate.swift in Sources */,
 				DAEF7DAF298827B600284326 /* CourseListInteractor.swift in Sources */,
+				DAEF7DB529884FFF00284326 /* CourseCellViewModel.swift in Sources */,
 				DAEF7DB1298827C500284326 /* CourseListConfigurator.swift in Sources */,
 				DAEF7DB329882CB600284326 /* CourseListRouter.swift in Sources */,
 			);

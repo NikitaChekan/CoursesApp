@@ -25,12 +25,19 @@ class CourseListPresenter: CourseListViewOutputProtocol {
     func viewDidLoad() {
         interactor.fetchCourses()
     }
+    
+    func didTapCell(at indexPath: IndexPath) {
+        guard let course = dataStore?.courses[indexPath.row] else { return }
+        router.openCourseDetailsViewController(with: course)
+    }
 }
 
 // MARK: - CourseListInteractorOutputProtocol
 extension CourseListPresenter: CourseListInteractorOutputProtocol {
     func coursesDidReceive(with dataStore: CourseListDataStore) {
         self.dataStore = dataStore
-        view.display(courses: dataStore.courses)
+        let section = CourseSectionViewModel()
+        dataStore.courses.forEach { section.rows.append(CourseCellViewModel(course: $0)) }
+        view.reloadData(for: section)
     }
 }
