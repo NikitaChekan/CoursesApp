@@ -7,9 +7,19 @@
 
 import UIKit
 
+protocol CourseListViewInputProtocol {
+    
+}
+
+protocol CourseListViewOutputProtocol {
+    init(view: CourseDetailsViewInputProtocol)
+    func viewDidLoad()
+}
+
 class CourseListViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
+    var presenter: CourseListViewOutputProtocol!
     
     private var activityIndicator: UIActivityIndicatorView?
     private var courses: [Course] = []

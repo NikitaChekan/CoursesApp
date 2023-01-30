@@ -22,6 +22,9 @@
 		DAEF7DA72987FF2500284326 /* CourseDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DA62987FF2500284326 /* CourseDetailsPresenter.swift */; };
 		DAEF7DA92988013600284326 /* CourseDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DA82988013600284326 /* CourseDetailsInteractor.swift */; };
 		DAEF7DAB2988032F00284326 /* CourseDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DAA2988032F00284326 /* CourseDetailsConfigurator.swift */; };
+		DAEF7DAD298827A900284326 /* CourseListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DAC298827A900284326 /* CourseListPresenter.swift */; };
+		DAEF7DAF298827B600284326 /* CourseListInterector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DAE298827B600284326 /* CourseListInterector.swift */; };
+		DAEF7DB1298827C500284326 /* CourseListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF7DB0298827C500284326 /* CourseListConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		DAEF7DA62987FF2500284326 /* CourseDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsPresenter.swift; sourceTree = "<group>"; };
 		DAEF7DA82988013600284326 /* CourseDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsInteractor.swift; sourceTree = "<group>"; };
 		DAEF7DAA2988032F00284326 /* CourseDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailsConfigurator.swift; sourceTree = "<group>"; };
+		DAEF7DAC298827A900284326 /* CourseListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListPresenter.swift; sourceTree = "<group>"; };
+		DAEF7DAE298827B600284326 /* CourseListInterector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListInterector.swift; sourceTree = "<group>"; };
+		DAEF7DB0298827C500284326 /* CourseListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +139,11 @@
 		DAEF7DA32987FC0C00284326 /* CourseList */ = {
 			isa = PBXGroup;
 			children = (
+				DAEF7DA52987FC4800284326 /* CourseCell */,
 				DA9A22DB2970424800DD6751 /* CourseListViewController.swift */,
+				DAEF7DAC298827A900284326 /* CourseListPresenter.swift */,
+				DAEF7DAE298827B600284326 /* CourseListInterector.swift */,
+				DAEF7DB0298827C500284326 /* CourseListConfigurator.swift */,
 			);
 			path = CourseList;
 			sourceTree = "<group>";
@@ -141,7 +151,6 @@
 		DAEF7DA42987FC2600284326 /* CourseDetails */ = {
 			isa = PBXGroup;
 			children = (
-				DAEF7DA52987FC4800284326 /* CourseCell */,
 				DA9A22F8297048E000DD6751 /* CourseDetailsViewController.swift */,
 				DAEF7DA62987FF2500284326 /* CourseDetailsPresenter.swift */,
 				DAEF7DA82988013600284326 /* CourseDetailsInteractor.swift */,
@@ -236,11 +245,14 @@
 				DA9A22D82970424800DD6751 /* AppDelegate.swift in Sources */,
 				DA9A22FB29704B3900DD6751 /* CourseCell.swift in Sources */,
 				DA9A22F7297048A400DD6751 /* NetworkManager.swift in Sources */,
+				DAEF7DAD298827A900284326 /* CourseListPresenter.swift in Sources */,
 				DA9A22F6297048A400DD6751 /* ImageManager.swift in Sources */,
 				DA9A22F5297048A400DD6751 /* DataManager.swift in Sources */,
 				DA9A22F9297048E000DD6751 /* CourseDetailsViewController.swift in Sources */,
 				DAEF7DA72987FF2500284326 /* CourseDetailsPresenter.swift in Sources */,
 				DA9A22DA2970424800DD6751 /* SceneDelegate.swift in Sources */,
+				DAEF7DAF298827B600284326 /* CourseListInterector.swift in Sources */,
+				DAEF7DB1298827C500284326 /* CourseListConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

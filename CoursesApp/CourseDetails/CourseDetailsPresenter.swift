@@ -8,6 +8,11 @@
 import Foundation
 
 struct CourseDetailsDataStore {
+    let courseName: String
+    let numberOfLessons: Int
+    let numberOfTests: Int
+    let imageData: Data?
+    let isFavorite: Bool
     
 }
 
@@ -20,11 +25,31 @@ class CourseDetailsPresenter: CourseDetailsViewOutputProtocol {
     }
     
     func showDetails() {
-        
+        interactor.provideCourseDetails()
+    }
+    
+    func favoriteButtonPressed() {
+        interactor.toggleFavoriteStatus()
     }
 }
 
 // MARK: - CourseDetailsInteractorInputProtocol
 extension CourseDetailsPresenter: CourseDetailsInteractorOutputProtocol {
+    func receiveCourseDetails(with dataStore: CourseDetailsDataStore) {
+        let numberOfLessons = "Number of lessons: \(dataStore.numberOfLessons)"
+        let numberOfTests = "Number of tests: \(dataStore.numberOfTests)"
+        
+        view.displayCourseName(with: dataStore.courseName)
+        view.displayNumberOfLessons(with: numberOfLessons)
+        view.displayNumberOfTests(with: numberOfTests)
+        
+        view.displayImageForFavoriteButton(with: dataStore.isFavorite)
+        
+        guard let imageData = dataStore.imageData else { return }
+        view.displayImage(with: imageData)
+    }
     
+    func receiveFavoriteStatus(with status: Bool) {
+        view.displayImageForFavoriteButton(with: status)
+    }
 }

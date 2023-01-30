@@ -15,7 +15,7 @@ class CourseDetailsConfigurator: CourseDetailsConfiguratorInputProtocol {
     func configure(withView view: CourseDetailsViewController, and course: Course) {
         let presenter = CourseDetailsPresenter(view: view)
         let interactor = CourseDetailsInteractor(presenter: presenter, course: course)
-        view.presenter = presenter as? any CourseDetailsViewInputProtocol
+        view.presenter = presenter
         presenter.interactor = interactor
     }
 }
