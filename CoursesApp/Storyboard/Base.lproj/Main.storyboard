@@ -115,6 +115,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="FRR-8J-zId" kind="show" identifier="CourseDetails" id="PtV-6J-nr6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -135,7 +138,6 @@
                     <navigationItem key="navigationItem" title="Courses" id="KeY-Xn-sMu"/>
                     <connections>
                         <outlet property="tableView" destination="z6x-F6-YBS" id="zUa-Qt-wdp"/>
-                        <segue destination="FRR-8J-zId" kind="show" identifier="showDetails" id="3pQ-AN-QbD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNn-GF-gtU" sceneMemberID="firstResponder"/>

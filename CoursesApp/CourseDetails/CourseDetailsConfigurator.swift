@@ -1,9 +1,8 @@
 //
-//  CourseDetailsConfigurator.swift
-//  SwiftbookApp
+//  Course.swift
+//  CoursesApp
 //
-//  Created by Alexey Efimov on 25.10.2022.
-//  Copyright © 2022 Alexey Efimov. All rights reserved.
+//  Created by Nikita Chekan on 12.01.2023.
 //
 
 import Foundation
